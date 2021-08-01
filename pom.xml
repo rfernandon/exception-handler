@@ -30,7 +30,7 @@
         <sonar.links.issue>https://github.com/rfernandon/exception-handler/issues</sonar.links.issue>
         <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
         <sonar.exclusions>
-            src/main/java/com/rfernandon/exceptionhandler/exceptions/*.javaa,
+            src/main/java/com/rfernandon/exceptionhandler/exceptions/*.java,
             src/main/java/com/rfernandon/exceptionhandler/model/ErrorDetails.java,
             src/main/java/com/rfernandon/exceptionhandler/utils/ParseUtil.java
         </sonar.exclusions>
