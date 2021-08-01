@@ -11,7 +11,7 @@
 
     <groupId>com.rfernandon</groupId>
     <artifactId>exception-handler</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>exception-handler</name>
     <description>Componente desenvolvido para disponibilizar um handler que captura as exceptions lançadas pelas aplicações.</description>
 
