@@ -30,7 +30,7 @@
         <sonar.links.issue>https://github.com/rfernandon/exception-handler/issues</sonar.links.issue>
         <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
         <sonar.exclusions>
-            src/main/java/com/rfernandon/exceptionhandler/exceptions/*.java,
+            src/main/java/com/rfernandon/exceptionhandler/exceptions/*.javaa,
             src/main/java/com/rfernandon/exceptionhandler/model/ErrorDetails.java,
             src/main/java/com/rfernandon/exceptionhandler/utils/ParseUtil.java
         </sonar.exclusions>
@@ -159,7 +159,7 @@
                 <artifactId>site-maven-plugin</artifactId>
                 <version>0.11</version>
                 <configuration>
-                    <message>Maven artifacts for ${project.artifactId}-${project.version}</message>
+                    <message>Publishing to maven repository: ${project.artifactId}-${project.version}</message>
                     <noJekyll>true</noJekyll>
                     <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
                     <branch>refs/heads/main</branch>
