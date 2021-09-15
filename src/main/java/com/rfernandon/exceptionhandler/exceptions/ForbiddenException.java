@@ -1,10 +1,10 @@
 package com.rfernandon.exceptionhandler.exceptions;
 
-import org.springframework.http.HttpStatus;
+import static org.springframework.http.HttpStatus.FORBIDDEN;
 
-public class ForbiddenException extends CallErrorException {
+public class ForbiddenException extends ErrorException {
 
     public ForbiddenException(String message) {
-        super(message, HttpStatus.FORBIDDEN);
+        super(message, FORBIDDEN);
     }
 }

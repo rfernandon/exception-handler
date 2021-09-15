@@ -1,10 +1,10 @@
 package com.rfernandon.exceptionhandler.exceptions;
 
-import org.springframework.http.HttpStatus;
+import static org.springframework.http.HttpStatus.SERVICE_UNAVAILABLE;
 
-public class ServiceUnavailableException extends CallErrorException {
+public class ServiceUnavailableException extends ErrorException {
 
     public ServiceUnavailableException(String message) {
-        super(message, HttpStatus.SERVICE_UNAVAILABLE);
+        super(message, SERVICE_UNAVAILABLE);
     }
 }

@@ -12,7 +12,7 @@ Feature: Display custom messages when an error occurs
 
     Examples:
       | param               | status | code | message                           |
-      | CallErrorException  | 500    | 01   | Test message: CallErrorException  |
+      | ErrorException      | 500    | 01   | Test message: ErrorException  |
       | BadRequestException | 400    | 01   | Test message: BadRequestException |
 
   @CustomErrorApp

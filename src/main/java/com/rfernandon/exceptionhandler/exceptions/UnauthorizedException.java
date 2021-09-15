@@ -1,10 +1,10 @@
 package com.rfernandon.exceptionhandler.exceptions;
 
-import org.springframework.http.HttpStatus;
+import static org.springframework.http.HttpStatus.UNAUTHORIZED;
 
-public class UnauthorizedException extends CallErrorException {
+public class UnauthorizedException extends ErrorException {
 
     public UnauthorizedException(String message) {
-        super(message, HttpStatus.UNAUTHORIZED);
+        super(message, UNAUTHORIZED);
     }
 }

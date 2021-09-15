@@ -1,10 +1,10 @@
 package com.rfernandon.exceptionhandler.exceptions;
 
-import org.springframework.http.HttpStatus;
+import static org.springframework.http.HttpStatus.PRECONDITION_FAILED;
 
-public class PreconditionException extends CallErrorException {
+public class PreconditionException extends ErrorException {
 
     public PreconditionException(String message) {
-        super(message, HttpStatus.PRECONDITION_FAILED);
+        super(message, PRECONDITION_FAILED);
     }
 }

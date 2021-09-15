@@ -1,10 +1,10 @@
 package com.rfernandon.exceptionhandler.exceptions;
 
-import org.springframework.http.HttpStatus;
+import static org.springframework.http.HttpStatus.UNPROCESSABLE_ENTITY;
 
-public class UnprocessableEntityException extends CallErrorException {
+public class UnprocessableEntityException extends ErrorException {
 
     public UnprocessableEntityException(String message) {
-        super(message, HttpStatus.UNPROCESSABLE_ENTITY);
+        super(message, UNPROCESSABLE_ENTITY);
     }
 }

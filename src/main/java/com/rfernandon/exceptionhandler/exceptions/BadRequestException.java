@@ -1,10 +1,10 @@
 package com.rfernandon.exceptionhandler.exceptions;
 
-import org.springframework.http.HttpStatus;
+import static org.springframework.http.HttpStatus.BAD_REQUEST;
 
-public class BadRequestException extends CallErrorException {
+public class BadRequestException extends ErrorException {
 
     public BadRequestException(String message) {
-        super(message, HttpStatus.BAD_REQUEST);
+        super(message, BAD_REQUEST);
     }
 }

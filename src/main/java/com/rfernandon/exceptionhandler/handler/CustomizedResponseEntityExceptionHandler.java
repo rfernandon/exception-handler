@@ -1,6 +1,6 @@
 package com.rfernandon.exceptionhandler.handler;
 
-import com.rfernandon.exceptionhandler.exceptions.CallErrorException;
+import com.rfernandon.exceptionhandler.exceptions.ErrorException;
 import com.rfernandon.exceptionhandler.utils.ErrorMessageFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
@@ -11,6 +11,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
@@ -45,9 +47,19 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
                 .error(String.valueOf(httpStatus.value()), ex.getMessage()));
     }
 
-    @ExceptionHandler(CallErrorException.class)
-    public ResponseEntity<Object> handleException(CallErrorException ex) {
+    @ExceptionHandler(ErrorException.class)
+    public ResponseEntity<Object> handleException(ErrorException ex) {
         return getResponseEntity(ex, ex.getHttpStatus(), ex.getMessage());
+    }
+
+    @ExceptionHandler(HttpClientErrorException.class)
+    public ResponseEntity<Object> handleException(HttpClientErrorException ex) {
+        return getResponseEntity(ex, ex.getStatusCode(), ex.getMessage());
+    }
+
+    @ExceptionHandler(HttpServerErrorException.class)
+    public ResponseEntity<Object> handleException(HttpServerErrorException ex) {
+        return getResponseEntity(ex, ex.getStatusCode(), ex.getMessage());
     }
 
     private ResponseEntity<Object> getResponseEntity(Exception ex, HttpStatus httpStatus, String mensagem) {

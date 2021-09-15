@@ -1,10 +1,10 @@
 package com.rfernandon.exceptionhandler.exceptions;
 
-import org.springframework.http.HttpStatus;
+import static org.springframework.http.HttpStatus.NOT_FOUND;
 
-public class NotFoundException extends CallErrorException {
+public class NotFoundException extends ErrorException {
 
     public NotFoundException(String message) {
-        super(message, HttpStatus.NOT_FOUND);
+        super(message, NOT_FOUND);
     }
 }

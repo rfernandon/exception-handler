@@ -1,10 +1,10 @@
 package com.rfernandon.exceptionhandler.exceptions;
 
-import org.springframework.http.HttpStatus;
+import static org.springframework.http.HttpStatus.NOT_IMPLEMENTED;
 
-public class NotImplementedException extends CallErrorException {
+public class NotImplementedException extends ErrorException {
 
     public NotImplementedException(String message) {
-        super(message, HttpStatus.NOT_IMPLEMENTED);
+        super(message, NOT_IMPLEMENTED);
     }
 }

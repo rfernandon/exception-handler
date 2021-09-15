@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.3.RELEASE</version>
+        <version>2.3.10.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -19,20 +19,17 @@
         <java.version>11</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
         <github.global.server>github</github.global.server>
-
         <sonar.projectName>Exception Handler</sonar.projectName>
         <sonar.sourceEncoding>UTF-8</sonar.sourceEncoding>
         <sonar.links.homepage>https://github.com/rfernandon/exception-handler</sonar.links.homepage>
-        <sonar.links.ci>https://travis-ci.org/rfernandon/exception-handler</sonar.links.ci>
+        <sonar.links.ci>https://travis-ci.com/rfernandon/exception-handler</sonar.links.ci>
         <sonar.links.scm>https://github.com/rfernandon/exception-handler</sonar.links.scm>
         <sonar.links.issue>https://github.com/rfernandon/exception-handler/issues</sonar.links.issue>
         <sonar.qualitygate.wait>true</sonar.qualitygate.wait>
         <sonar.exclusions>
             src/main/java/com/rfernandon/exceptionhandler/exceptions/*.java,
-            src/main/java/com/rfernandon/exceptionhandler/model/ErrorDetails.java,
-            src/main/java/com/rfernandon/exceptionhandler/utils/ParseUtil.java
+            src/main/java/com/rfernandon/exceptionhandler/model/ErrorDetails.java
         </sonar.exclusions>
     </properties>
 
@@ -54,14 +51,9 @@
 
         <!-- dependencias diversas -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
             <optional>true</optional>
         </dependency>
         <dependency>
@@ -102,12 +94,6 @@
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
-            <version>3.2.4</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-junit-jupiter</artifactId>
             <version>3.2.4</version>
             <scope>test</scope>
         </dependency>
