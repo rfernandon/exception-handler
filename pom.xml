@@ -33,6 +33,17 @@
         </sonar.exclusions>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>rfernandon-repo</id>
+            <url>https://raw.github.com/rfernandon/repository-maven/main/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+
     <distributionManagement>
         <repository>
             <id>internal.repo</id>
