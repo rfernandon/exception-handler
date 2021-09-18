@@ -1,5 +1,6 @@
 package com.rfernandon.exceptionhandler.utils;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.rfernandon.exceptionhandler.model.ErrorDetails;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
@@ -11,7 +12,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
 
-import static com.rfernandon.exceptionhandler.utils.ParseUtil.objectToJson;
+import static com.rfernandon.dataconversion.ObjectMapperUtil.convertObjectToJson;
 
 public class ErrorMessageFactory {
 
@@ -28,15 +29,15 @@ public class ErrorMessageFactory {
     }
 
     public String build() {
-        return objectToJson(errorDetails);
+        return convertObjectToJson(errorDetails);
     }
 
     public static String error(String codeError, String message) {
         var error = new ErrorDetails(codeError, message);
-        return objectToJson(List.of(error));
+        return convertObjectToJson(List.of(error));
     }
 
-    public static String error(String codeError) {
+    public static String error(String codeError) throws JsonProcessingException {
         return error(codeError, getMessagesProperties(codeError));
     }
 
@@ -45,10 +46,10 @@ public class ErrorMessageFactory {
                 .stream()
                 .map(m -> new ErrorDetails(String.valueOf(httpStatus.value()), m))
                 .collect(Collectors.toList());
-        return objectToJson(error);
+        return convertObjectToJson(error);
     }
 
-    public static String errorWithParam(String codeError, String... params) {
+    public static String errorWithParam(String codeError, String... params) throws JsonProcessingException {
         return error(codeError, params != null ? getMessagesProperties(codeError, params) : getMessagesProperties(codeError));
     }
 

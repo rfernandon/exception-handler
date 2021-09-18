@@ -49,6 +49,13 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- componentes proprios -->
+        <dependency>
+            <groupId>com.rfernandon</groupId>
+            <artifactId>data-conversion-utility</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
         <!-- dependencias diversas -->
         <dependency>
             <groupId>org.projectlombok</groupId>
