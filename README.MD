@@ -8,7 +8,7 @@
 [![Sonarcloud Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=com.rfernandon:exception-handler&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.rfernandon:exception-handler) 
 [![Sonarcloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.rfernandon:exception-handler&metric=coverage)](https://sonarcloud.io/component_measures?id=com.rfernandon:exception-handler)
 
-Esse componente foi desenvolvido para ser usado em aplicações **Spring Boot**, ele implementa um handler que captura as exceptions lançadas pelas aplicações.
+Esse componente foi desenvolvido para ser usado em aplicações **Spring Boot**, ele implementa um handler que captura as exceptions lançadas pelas aplicações e transforma as mensagens em um formato mais amigável.
 
 ### Como usar
 
