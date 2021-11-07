@@ -1,6 +1,6 @@
 package com.rfernandon.exceptionhandler.controller;
 
-import com.rfernandon.exceptionhandler.utils.ErrorMessageFactory;
+import com.rfernandon.exceptionhandler.factory.ErrorMessageFactory;
 import org.springframework.boot.autoconfigure.web.ErrorProperties;
 import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;
 import org.springframework.boot.web.error.ErrorAttributeOptions;

@@ -1,7 +1,7 @@
 package com.rfernandon.exceptionhandler.handler;
 
 import com.rfernandon.exceptionhandler.exceptions.ErrorException;
-import com.rfernandon.exceptionhandler.utils.ErrorMessageFactory;
+import com.rfernandon.exceptionhandler.factory.ErrorMessageFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

@@ -1,14 +1,15 @@
 package com.rfernandon.exceptionhandler.utils;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.rfernandon.exceptionhandler.factory.ErrorMessageFactory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 import static com.rfernandon.exceptionhandler.support.utils.TestUtil.getJsonNode;
-import static com.rfernandon.exceptionhandler.utils.ErrorMessageFactory.error;
-import static com.rfernandon.exceptionhandler.utils.ErrorMessageFactory.errorWithParam;
+import static com.rfernandon.exceptionhandler.factory.ErrorMessageFactory.error;
+import static com.rfernandon.exceptionhandler.factory.ErrorMessageFactory.errorWithParam;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DisplayName("\uD83C\uDF7A Testando a factory ErrorMessage")

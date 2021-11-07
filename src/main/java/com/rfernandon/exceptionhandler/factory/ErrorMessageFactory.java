@@ -1,4 +1,4 @@
-package com.rfernandon.exceptionhandler.utils;
+package com.rfernandon.exceptionhandler.factory;
 
 import com.rfernandon.exceptionhandler.model.ErrorDetails;
 import org.springframework.http.HttpStatus;
@@ -40,16 +40,18 @@ public class ErrorMessageFactory {
         return error(codeError, getMessagesProperties(codeError));
     }
 
+    public static String errorWithParam(String codeError, String... params) {
+        return error(codeError, params != null
+                ? getMessagesProperties(codeError, params)
+                : getMessagesProperties(codeError));
+    }
+
     public static String error(HttpStatus httpStatus, BindingResult bindingResult) {
         var error = getMessageValidation(bindingResult)
                 .stream()
                 .map(m -> new ErrorDetails(String.valueOf(httpStatus.value()), m))
                 .collect(Collectors.toList());
         return convertObjectToJson(error);
-    }
-
-    public static String errorWithParam(String codeError, String... params) {
-        return error(codeError, params != null ? getMessagesProperties(codeError, params) : getMessagesProperties(codeError));
     }
 
     private static String getMessagesProperties(String codeError) {

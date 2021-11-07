@@ -1,6 +1,6 @@
 package com.rfernandon.exceptionhandler.support.controller;
 
-import com.rfernandon.exceptionhandler.utils.ErrorMessageFactory;
+import com.rfernandon.exceptionhandler.factory.ErrorMessageFactory;
 import com.rfernandon.exceptionhandler.support.model.TestModel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
