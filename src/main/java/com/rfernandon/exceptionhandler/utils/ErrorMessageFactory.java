@@ -1,6 +1,5 @@
 package com.rfernandon.exceptionhandler.utils;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.rfernandon.exceptionhandler.model.ErrorDetails;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
@@ -37,7 +36,7 @@ public class ErrorMessageFactory {
         return convertObjectToJson(List.of(error));
     }
 
-    public static String error(String codeError) throws JsonProcessingException {
+    public static String error(String codeError) {
         return error(codeError, getMessagesProperties(codeError));
     }
 
@@ -49,7 +48,7 @@ public class ErrorMessageFactory {
         return convertObjectToJson(error);
     }
 
-    public static String errorWithParam(String codeError, String... params) throws JsonProcessingException {
+    public static String errorWithParam(String codeError, String... params) {
         return error(codeError, params != null ? getMessagesProperties(codeError, params) : getMessagesProperties(codeError));
     }
 
