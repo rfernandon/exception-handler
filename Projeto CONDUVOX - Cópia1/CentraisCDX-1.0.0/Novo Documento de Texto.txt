@@ -1,0 +1,25 @@
+        // Define o CHK com base nos valores existentes na lista
+        /*
+        private string definirCHK(string data)
+        {
+            // Converte o primeiro bit em inteiro (esse bit é o Number)
+            int result = Convert.ToInt32(data.Substring(0, 2));
+
+            for (int i = 2; i < data.Length; i = i + 2)
+            {
+                // Extrai o bit eliminando o "F"
+                string x = data.Substring(i, 2).Replace("F", "");
+
+                // Verifica se sobrou algum valor para ser convertido em inteiro
+                if (x.Length > 0)
+                {
+                    // Converte o primeiro bit em inteiro (esse bit é o Number)
+                    int n = Convert.ToInt32(x);
+
+                    // Efetua o cálculo XOR
+                    result = result ^ n;
+                }
+            }
+            return Convert.ToString(result, 16).PadLeft(2, '0').ToUpper();
+        }
+        */

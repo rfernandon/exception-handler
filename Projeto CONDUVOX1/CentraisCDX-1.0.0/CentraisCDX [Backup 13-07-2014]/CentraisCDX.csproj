@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA619444-423B-4A5F-99E0-5458AC88D4CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CentraisCDX</RootNamespace>
+    <AssemblyName>CentraisCDX</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CentralCDX.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\_Lib itextsharp (cria PDF)\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Comunicacao\DadosDTO.cs" />
+    <Compile Include="Class\Comunicacao\Log.cs" />
+    <Compile Include="Class\Comunicacao\DadosController.cs" />
+    <Compile Include="Class\Comunicacao\TestarComunicacao.cs" />
+    <Compile Include="Class\Controller\CentralControl.cs" />
+    <Compile Include="Class\Model\ProgramacaoInicial.cs" />
+    <Compile Include="Class\Model\Alarme.cs" />
+    <Compile Include="Class\Model\Central.cs" />
+    <Compile Include="Class\Model\LinhaExterna.cs" />
+    <Compile Include="Class\Model\MesaOperadora.cs" />
+    <Compile Include="Class\Model\Ramal.cs" />
+    <Compile Include="Class\Model\Tecla.cs" />
+    <Compile Include="Class\Model\Video.cs" />
+    <Compile Include="Class\Model\Tronco.cs" />
+    <Compile Include="Class\Util\ArquivoXML.cs" />
+    <Compile Include="Class\Util\CreatePDF.cs" />
+    <Compile Include="Class\Util\Exceptions\ComandoNaoReconhecidoException.cs" />
+    <Compile Include="Class\Util\Exceptions\ComandoTimeOutException.cs" />
+    <Compile Include="Class\Util\Exceptions\ComandoRespostaInvalidaException.cs" />
+    <Compile Include="Class\Util\Exceptions\ArquivoInvalidoException.cs" />
+    <Compile Include="Class\Util\Exceptions\PortaCOMInvalidaException.cs" />
+    <Compile Include="Class\Util\Exceptions\NumeroRamalVazioException.cs" />
+    <Compile Include="Class\Util\Exceptions\NumeroNaoEncontradoException.cs" />
+    <Compile Include="Class\Util\Exceptions\NumeroTelefoneInvalidoException.cs" />
+    <Compile Include="Class\Comunicacao\Processo.cs" />
+    <Compile Include="Class\Util\Exceptions\NumeroDuplicadoException.cs" />
+    <Compile Include="Class\Util\Exceptions\NumeroInvalidoException.cs" />
+    <Compile Include="Class\Comunicacao\TransferDados.cs" />
+    <Compile Include="Class\View\InterfaceUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\View\InterfaceUsuario.Designer.cs">
+      <DependentUpon>InterfaceUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Class\View\InterfaceUsuario.resx">
+      <DependentUpon>InterfaceUsuario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\programacaoInicial.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CentralCDX.ico" />
+    <None Include="Resources\icon_voltar_transp.png" />
+    <None Include="Resources\icon_testar_transp.png" />
+    <None Include="Resources\icon_calculator_transp.png" />
+    <None Include="Resources\icon_search_transp.png" />
+    <None Include="Resources\icon_refresh_transp.png" />
+    <None Include="Resources\icon_add_transp.png" />
+    <None Include="Resources\icon_delete_transp.png" />
+    <None Include="Resources\icon_concluir_transp.png" />
+    <None Include="Resources\logo_conduvox.png" />
+    <None Include="Resources\icon_pdf_transp.png" />
+    <None Include="Resources\icon_config_transp.png" />
+    <None Include="Resources\icon_enviar_transp.png" />
+    <None Include="Resources\icon_coletar_transp.png" />
+    <None Include="Resources\icon_save_as_transp.png" />
+    <None Include="Resources\icon_save_transp.png" />
+    <None Include="Resources\icon_abrir_transp.png" />
+    <None Include="Resources\icon_novo_transp.png" />
+    <None Include="Resources\icon_seta_transp.png" />
+    <None Include="Resources\apresentacao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

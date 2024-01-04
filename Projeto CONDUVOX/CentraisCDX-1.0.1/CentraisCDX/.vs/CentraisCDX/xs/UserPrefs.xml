@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{DA619444-423B-4A5F-99E0-5458AC88D4CC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Class/View/InterfaceUsuario.cs">
+    <Files>
+      <File FileName="Class/View/InterfaceUsuario.cs" Line="20" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CentraisCDX" expanded="True">
+            <Node name="CentraisCDX" expanded="True">
+              <Node name="References" expanded="True">
+                <Node name="System.Deployment" selected="True" />
+              </Node>
+              <Node name="Class" expanded="True">
+                <Node name="Utils" expanded="True" />
+                <Node name="View" expanded="True">
+                  <Node name="InterfaceUsuario.cs" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CentraisCDX PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,5 @@
+C:\Users\Ricardo\Desktop\Projeto CONDUVOX\CentraisCDX-1.0.0\CentraisCDX\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Ricardo\Desktop\Projeto CONDUVOX\CentraisCDX-1.0.0\CentraisCDX\obj\x86\Release\CentraisCDX.Class.View.InterfaceUsuario.resources
+C:\Users\Ricardo\Desktop\Projeto CONDUVOX\CentraisCDX-1.0.0\CentraisCDX\obj\x86\Release\CentraisCDX.Properties.Resources.resources
+C:\Users\Ricardo\Desktop\Projeto CONDUVOX\CentraisCDX-1.0.0\CentraisCDX\obj\x86\Release\ResGen.read.1.tlog
+C:\Users\Ricardo\Desktop\Projeto CONDUVOX\CentraisCDX-1.0.0\CentraisCDX\obj\x86\Release\ResGen.write.1.tlog

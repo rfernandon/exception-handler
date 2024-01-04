@@ -1,0 +1,5 @@
+[autorun]
+ICON=instalar_TerminalC-VOZ.ico
+OPEN=instalar_TerminalC-VOZ_V1.0.2010.exe
+ACTION=Terminal de programação da CAT-VOZ
+LABEL=TerminalC-VOZ

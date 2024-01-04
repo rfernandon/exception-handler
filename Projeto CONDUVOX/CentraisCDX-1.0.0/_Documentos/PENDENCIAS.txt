@@ -1,0 +1,20 @@
+
+##### PENDENCIAS:
+-> Definir teclas TAB; - FAZER POR ÚLTIMO
+-> Colocar legenda nos códigos (verificar se existe alguma exception sobrando); - FAZER POR ÚLTIMO
+-> Corrigir bug modificar ramal (o nro do atendedor não encontra o número que ainda vai ser definido);
+-> CRIAR WIZARD DE INSTALAÇÃO
+-> Implementar coletar de programação;
+	-> Implementar funcionalidade de cancelamento
+	-> Implementar progressbar 
+
+
+
+##### VERIFICAR SE JÁ FOI VERIFICADO:
+- AGUARDAR CORRIGIR HARDWARE PARA ACEITAR A PROGRAMAÇÃO DO TEMPO DO ALARME NO PROTOCOLO
+	- DESCOMENTAR LINHA NO CÓDIGO
+- VERIFICAR SE O VÍDEO ESTÁ IMPLEMENTADO
+- VERIFICAR ERRO NO CALCULO MODO PLUMADA (VER E-MAIL)
+- IMPLEMENTAR LOGICA PARA ENVIAR APENAS OS RAMAIS PROGRAMADOS
+
+

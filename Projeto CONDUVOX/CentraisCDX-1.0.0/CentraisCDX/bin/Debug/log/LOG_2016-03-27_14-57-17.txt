@@ -1,0 +1,4 @@
+LOG CRIADO EM: 27/03/2016 14:57:17
+O índice e o comprimento devem se referir a um local dentro da seqüência.
+Nome do parâmetro: length
+

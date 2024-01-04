@@ -1,0 +1,10 @@
+ATENÇÃO:
+
+- Criar no assistente as pastas "Arquivos", "Log" e "Relatorio"
+
+- A pasta "Suporte" deve ser incluida no CD de instalação.
+  Caso o assistente não encontrar os arquivos da pasta "Suporte", irá fazer o download do .NET 2.0.
+
+INFORMAÇÕES SOBRE LOTE:
+
+- Sem informações

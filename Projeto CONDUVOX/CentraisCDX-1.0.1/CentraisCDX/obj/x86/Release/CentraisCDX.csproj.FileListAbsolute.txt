@@ -1,0 +1,4 @@
+/Users/r.fernandon/docs/workspace/workspace_charp/Projeto CONDUVOX/CentraisCDX-1.0.1/CentraisCDX/obj/x86/Release/CentraisCDX.Class.View.InterfaceUsuario.resources
+/Users/r.fernandon/docs/workspace/workspace_charp/Projeto CONDUVOX/CentraisCDX-1.0.1/CentraisCDX/obj/x86/Release/CentraisCDX.Properties.Resources.resources
+/Users/r.fernandon/docs/workspace/workspace_charp/Projeto CONDUVOX/CentraisCDX-1.0.1/CentraisCDX/obj/x86/Release/CentraisCDX.csproj.GenerateResource.cache
+/Users/r.fernandon/docs/workspace/workspace_charp/Projeto CONDUVOX/CentraisCDX-1.0.1/CentraisCDX/obj/x86/Release/CentraisCDX.csproj.CoreCompileInputs.cache
